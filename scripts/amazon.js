@@ -33,23 +33,23 @@ products.forEach((product) => {
                 <div class="product-container">
                 <div class="product-image-container">
                 <img class="product-image"
-                src="images/products/athletic-cotton-socks-6-pairs.jpg">
+                src="${product.image}">
                 </div>
 
                 <div class="product-name limit-text-to-2-lines">
-                Black and Gray Athletic Cotton Socks - 6 Pairs
+                ${product.name}
                 </div>
 
                 <div class="product-rating-container">
                 <img class="product-rating-stars"
-                src="images/ratings/rating-45.png">
+                src="images/ratings/rating-${product.rating.stars * 10}.png">
                 <div class="product-rating-count link-primary">
-                87
+                ${product.rating.count}
                 </div>
                 </div>
 
                 <div class="product-price">
-                $10.90
+                $${product.priceCents / 100}
                 </div>
 
                 <div class="product-quantity-container">
