@@ -53,12 +53,10 @@ products.forEach((product) => {
         `;
 });
 
-console.log(productsHTML);
-
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
         button.addEventListener('click', () => {
-
+                console.log('Added to cart');
         });
 });
