@@ -24,7 +24,7 @@ const products = [
                         stars: 4.5,
                         count: 56
                 },
-                priceCents: 7990
+                priceCents: 799
         }
 ];
 
@@ -51,7 +51,7 @@ products.forEach((product) => {
                 </div>
 
                 <div class="product-price">
-                $${product.priceCents / 100}
+                $${(product.priceCents / 100).toFixed(2)}
                 </div>
 
                 <div class="product-quantity-container">
@@ -84,3 +84,5 @@ products.forEach((product) => {
 });
 
 console.log(productsHTML);
+
+document.querySelector('.js-products-grid').innerHTML = productsHTML;
