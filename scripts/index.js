@@ -62,11 +62,9 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
                     mathingItem = item;
                 }
             });
-
             if (mathingItem) {
                     mathingItem.quantity++;
             }
-
             else{
                     cart.push({
                     productName: productName,
