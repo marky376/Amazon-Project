@@ -29,7 +29,7 @@ const products = [
 ];
 
 products.forEach((product) => {
-        `
+        const html = `
         <div class="product-container">
                 <div class="product-image-container">
                         <img class="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg">
