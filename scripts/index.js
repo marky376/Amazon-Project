@@ -59,20 +59,20 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 
         cart.forEach((item) => {
             if (productName === item.productName) {
-                mathingItem = item;
-            }
-        });
+                    mathingItem = item;
+                }
+            });
 
             if (mathingItem) {
-                mathingItem.quantity++;
+                    mathingItem.quantity++;
             }
 
             else{
-                cart.push({
-                productName: productName,
-                quantity: 1
-            });
-        }
+                    cart.push({
+                    productName: productName,
+                    quantity: 1
+                });
+            }
 
         console.log(cart)
     });
