@@ -714,4 +714,10 @@ const products = [
        
       
       });
-     document.querySelector('.js-products-grids').innerHTML=productsHTML
+     document.querySelector('.js-products-grids').innerHTML=productsHTML  
+
+    document.querySelectorAll('.js-add-to-cart-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        console.log('Added Product to Cart');
+      });
+    });
