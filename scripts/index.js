@@ -76,5 +76,5 @@ products.forEach((product) => {
                 Add to Cart
             </button>
         </div>
-    `
+    `;
 })
