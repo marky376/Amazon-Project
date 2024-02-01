@@ -53,6 +53,10 @@ document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
     button.addEventListener('click', () => {
+        /**
+         * The name of the product associated with the button.
+         * @type {string}
+         */
         const productName = button.dataset.productName;
 
         let mathingItem;
